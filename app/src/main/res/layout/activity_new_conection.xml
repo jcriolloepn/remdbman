@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NewConection">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NUEVA CONEXÓN"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textSize="20sp"
+                android:layout_alignParentTop="true" />
+
+            <EditText
+                android:id="@+id/text_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_text"
+                android:padding="16dp"
+                android:hint="Descripción" />
+
+            <Spinner
+                android:id="@+id/vendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_description"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:id="@+id/parameters_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vendor"
+                android:text="PARAMETROS DE CONEXION"
+                android:padding="16dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/text_hostname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/parameters_label"
+                android:padding="16dp"
+                android:hint="Host remoto" />
+
+            <EditText
+                android:id="@+id/text_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_hostname"
+                android:padding="16dp"
+                android:hint="Puerto" />
+
+            <EditText
+                android:id="@+id/text_database_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_port"
+                android:padding="16dp"
+                android:hint="Nombre de Base de Datos" />
+
+            <EditText
+                android:id="@+id/text_schema_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_database_name"
+                android:padding="16dp"
+                android:hint="Nombre del esquema" />
+
+            <EditText
+                android:id="@+id/text_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_schema_name"
+                android:padding="16dp"
+                android:hint="Usuario" />
+
+            <EditText
+                android:id="@+id/text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_user_name"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:hint="Contraseña" />
+
+            <LinearLayout
+                android:id="@+id/ssh_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_password"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Se usará SSH" />
+
+                <Switch
+                    android:id="@+id/use_ssh_sw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ssh_parameters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ssh_confirmation"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <EditText
+                    android:id="@+id/ssh_server"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:hint="Servidor SSH" />
+
+                <EditText
+                    android:id="@+id/ssh_port"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ssh_server"
+                    android:padding="16dp"
+                    android:hint="Puerto SSH" />
+
+                <EditText
+                    android:id="@+id/ssh_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ssh_port"
+                    android:padding="16dp"
+                    android:hint="Usuario" />
+
+                <EditText
+                    android:id="@+id/ssh_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ssh_user"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:hint="Credencial" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUARADAR CONEXION"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+</layout>

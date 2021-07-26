@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/new_conection"
+        android:orderInCategory="1"
+        android:title="Crear nueva conexion"
+        android:icon="@android:drawable/ic_menu_preferences"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/usetoken"
+        android:orderInCategory="1"
+        android:title="Iniciar con token"
+        android:icon="@android:drawable/ic_menu_preferences"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="2"
+        android:title="Salir"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="never" />
+
+</menu>
