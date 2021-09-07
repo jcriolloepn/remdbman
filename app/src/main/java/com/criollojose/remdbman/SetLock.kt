@@ -5,6 +5,6 @@ import android.os.Bundle
 
 class SetLock : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        super.onCreate(savedInstanceState)
     }
 }
