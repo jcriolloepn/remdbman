@@ -22,19 +22,19 @@
                 android:id="@+id/title_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NUEVA CONEXÓN"
+                android:layout_alignParentTop="true"
                 android:gravity="center"
                 android:padding="16dp"
-                android:textSize="20sp"
-                android:layout_alignParentTop="true" />
+                android:text="NUEVA CONEXÓN"
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/text_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title_text"
-                android:padding="16dp"
-                android:hint="Descripción" />
+                android:hint="Descripción"
+                android:padding="16dp" />
 
             <Spinner
                 android:id="@+id/vendor"
@@ -162,10 +162,13 @@
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#03A9F4"
         android:text="GUARADAR CONEXION"
-        android:layout_alignParentBottom="true"/>
+        android:textStyle="bold" />
 </RelativeLayout>
 </layout>
