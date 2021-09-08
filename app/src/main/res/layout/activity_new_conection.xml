@@ -26,6 +26,7 @@
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="NUEVA CONEXÓN"
+                android:fontFamily="@font/SFMonoBold"
                 android:textSize="20sp" />
 
             <EditText
@@ -34,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title_text"
                 android:hint="Descripción"
-                android:fontFamily="casual"
+                android:fontFamily="@font/SFMonoLight"
                 android:padding="16dp" />
 
             <Spinner
@@ -50,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/vendor"
                 android:text="PARAMETROS DE CONEXION"
-                android:fontFamily="casual"
+                android:fontFamily="@font/SFMonoBold"
                 android:padding="16dp"
                 android:textSize="20dp" />
 
@@ -61,7 +62,7 @@
                 android:layout_below="@id/parameters_label"
                 android:padding="16dp"
                 android:hint="Host remoto"
-                android:fontFamily="casual"/>
+                android:fontFamily="@font/SFMonoLight"/>
 
             <EditText
                 android:id="@+id/text_port"
@@ -70,7 +71,7 @@
                 android:layout_below="@id/text_hostname"
                 android:padding="16dp"
                 android:hint="Puerto"
-                android:fontFamily="casual"/>
+                android:fontFamily="@font/SFMonoLight"/>
 
             <EditText
                 android:id="@+id/text_database_name"
@@ -79,7 +80,7 @@
                 android:layout_below="@id/text_port"
                 android:padding="16dp"
                 android:hint="Nombre de Base de Datos"
-                android:fontFamily="casual"/>
+                android:fontFamily="@font/SFMonoLight"/>
 
             <EditText
                 android:id="@+id/text_schema_name"
@@ -88,7 +89,7 @@
                 android:layout_below="@id/text_database_name"
                 android:padding="16dp"
                 android:hint="Nombre del esquema"
-                android:fontFamily="casual"/>
+                android:fontFamily="@font/SFMonoLight"/>
 
             <EditText
                 android:id="@+id/text_user_name"
@@ -97,7 +98,7 @@
                 android:layout_below="@id/text_schema_name"
                 android:padding="16dp"
                 android:hint="Usuario"
-                android:fontFamily="casual"/>
+                android:fontFamily="@font/SFMonoLight"/>
 
             <EditText
                 android:id="@+id/text_password"
@@ -107,7 +108,7 @@
                 android:inputType="textPassword"
                 android:padding="16dp"
                 android:hint="Contraseña"
-                android:fontFamily="casual"/>
+                android:fontFamily="@font/SFMonoLight"/>
 
             <LinearLayout
                 android:id="@+id/ssh_confirmation"
@@ -120,7 +121,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="Se usará SSH"
-                    android:fontFamily="casual"/>
+                    android:fontFamily="@font/SFMonoBold"/>
 
                 <Switch
                     android:id="@+id/use_ssh_sw"
@@ -178,7 +179,7 @@
         android:layout_alignParentBottom="true"
         android:backgroundTint="#03A9F4"
         android:text="GUARADAR CONEXION"
-        android:fontFamily="monospace"/>
+        android:fontFamily="@font/SFMonoBold"/>
 
 </RelativeLayout>
 </layout>
