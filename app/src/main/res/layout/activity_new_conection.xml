@@ -34,6 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title_text"
                 android:hint="Descripción"
+                android:fontFamily="casual"
                 android:padding="16dp" />
 
             <Spinner
@@ -49,6 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/vendor"
                 android:text="PARAMETROS DE CONEXION"
+                android:fontFamily="casual"
                 android:padding="16dp"
                 android:textSize="20dp" />
 
@@ -58,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/parameters_label"
                 android:padding="16dp"
-                android:hint="Host remoto" />
+                android:hint="Host remoto"
+                android:fontFamily="casual"/>
 
             <EditText
                 android:id="@+id/text_port"
@@ -66,7 +69,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text_hostname"
                 android:padding="16dp"
-                android:hint="Puerto" />
+                android:hint="Puerto"
+                android:fontFamily="casual"/>
 
             <EditText
                 android:id="@+id/text_database_name"
@@ -74,7 +78,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text_port"
                 android:padding="16dp"
-                android:hint="Nombre de Base de Datos" />
+                android:hint="Nombre de Base de Datos"
+                android:fontFamily="casual"/>
 
             <EditText
                 android:id="@+id/text_schema_name"
@@ -82,7 +87,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text_database_name"
                 android:padding="16dp"
-                android:hint="Nombre del esquema" />
+                android:hint="Nombre del esquema"
+                android:fontFamily="casual"/>
 
             <EditText
                 android:id="@+id/text_user_name"
@@ -90,7 +96,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text_schema_name"
                 android:padding="16dp"
-                android:hint="Usuario" />
+                android:hint="Usuario"
+                android:fontFamily="casual"/>
 
             <EditText
                 android:id="@+id/text_password"
@@ -99,7 +106,8 @@
                 android:layout_below="@id/text_user_name"
                 android:inputType="textPassword"
                 android:padding="16dp"
-                android:hint="Contraseña" />
+                android:hint="Contraseña"
+                android:fontFamily="casual"/>
 
             <LinearLayout
                 android:id="@+id/ssh_confirmation"
@@ -111,7 +119,8 @@
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="Se usará SSH" />
+                    android:text="Se usará SSH"
+                    android:fontFamily="casual"/>
 
                 <Switch
                     android:id="@+id/use_ssh_sw"
@@ -169,6 +178,7 @@
         android:layout_alignParentBottom="true"
         android:backgroundTint="#03A9F4"
         android:text="GUARADAR CONEXION"
-        android:textStyle="bold" />
+        android:fontFamily="monospace"/>
+
 </RelativeLayout>
 </layout>
