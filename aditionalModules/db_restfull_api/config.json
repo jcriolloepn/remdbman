@@ -1,0 +1,11 @@
+{
+    "port":3000,
+    "mysql_database_config": {
+        "supportBigNumbers": true,
+        "bigNumberStrings": true,
+        "host": "localhost",
+        "user": "root",
+        "password": "root",
+        "database": "db_pruebas"
+    }
+}

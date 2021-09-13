@@ -12,7 +12,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".NewConection">
+        tools:context=".NewConection"
+        android:layout_above="@+id/nc_btn_test_cnx">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -22,113 +23,110 @@
                 android:id="@+id/title_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
+                android:text="@string/nc_text_title"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="NUEVA CONEXÓN"
-                android:fontFamily="@font/SFMonoBold"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:layout_alignParentTop="true" />
 
             <EditText
-                android:id="@+id/text_description"
+                android:id="@+id/nc_et_cnx_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title_text"
-                android:hint="Descripción"
-                android:fontFamily="@font/SFMonoLight"
-                android:padding="16dp" />
-
+                android:padding="16dp"
+                android:hint="@string/nc_et_cnxName" />
+<!--
             <Spinner
                 android:id="@+id/vendor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/text_description"
+                android:layout_below="@id/nc_et_cnx_name"
                 android:layout_margin="16dp" />
+-->
 
             <TextView
                 android:id="@+id/parameters_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/vendor"
-                android:text="PARAMETROS DE CONEXION"
-                android:fontFamily="@font/SFMonoBold"
+                android:layout_below="@+id/nc_et_cnx_name"
+                android:text="@string/nc_text_parameters"
                 android:padding="16dp"
                 android:textSize="20dp" />
 
             <EditText
-                android:id="@+id/text_hostname"
+                android:id="@+id/nc_et_host"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/parameters_label"
+                android:hint="@string/nc_et_host"
                 android:padding="16dp"
-                android:hint="Host remoto"
-                android:fontFamily="@font/SFMonoLight"/>
+                android:text="localhost" />
 
             <EditText
-                android:id="@+id/text_port"
+                android:id="@+id/nc_et_port"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/text_hostname"
+                android:layout_below="@id/nc_et_host"
+                android:hint="@string/nc_et_port"
                 android:padding="16dp"
-                android:hint="Puerto"
-                android:fontFamily="@font/SFMonoLight"/>
+                android:text="3306" />
 
             <EditText
-                android:id="@+id/text_database_name"
+                android:id="@+id/nc_et_database_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/text_port"
+                android:layout_below="@id/nc_et_port"
+                android:hint="@string/nc_et_dbName"
                 android:padding="16dp"
-                android:hint="Nombre de Base de Datos"
-                android:fontFamily="@font/SFMonoLight"/>
+                android:text="db_pruebas" />
 
             <EditText
-                android:id="@+id/text_schema_name"
+                android:id="@+id/nc_et_schema_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/text_database_name"
+                android:layout_below="@id/nc_et_database_name"
                 android:padding="16dp"
-                android:hint="Nombre del esquema"
-                android:fontFamily="@font/SFMonoLight"/>
+                android:hint="@string/nc_et_schemaName" />
 
             <EditText
-                android:id="@+id/text_user_name"
+                android:id="@+id/nc_et_db_user_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/text_schema_name"
+                android:layout_below="@id/nc_et_schema_name"
+                android:hint="@string/nc_et_user"
                 android:padding="16dp"
-                android:hint="Usuario"
-                android:fontFamily="@font/SFMonoLight"/>
+                android:text="root" />
 
             <EditText
-                android:id="@+id/text_password"
+                android:id="@+id/nc_et_db_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/text_user_name"
+                android:layout_below="@id/nc_et_db_user_name"
+                android:hint="@string/nc_et_password"
                 android:inputType="textPassword"
                 android:padding="16dp"
-                android:hint="Contraseña"
-                android:fontFamily="@font/SFMonoLight"/>
+                android:text="root" />
 
             <LinearLayout
                 android:id="@+id/ssh_confirmation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/text_password"
+                android:layout_below="@+id/nc_et_db_password"
                 android:orientation="horizontal">
-
+    <!--
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="Se usará SSH"
-                    android:fontFamily="@font/SFMonoBold"/>
+                    android:text="@string/nc_use_ssh_text" />
 
                 <Switch
                     android:id="@+id/use_ssh_sw"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
+    -->
             </LinearLayout>
-
+    <!--
             <LinearLayout
                 android:id="@+id/ssh_parameters"
                 android:layout_width="match_parent"
@@ -138,48 +136,53 @@
                 android:visibility="invisible">
 
                 <EditText
-                    android:id="@+id/ssh_server"
+                    android:id="@+id/nc_et_ssh_server"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
-                    android:hint="Servidor SSH" />
+                    android:hint="@string/nc_et_sshServer" />
 
                 <EditText
-                    android:id="@+id/ssh_port"
+                    android:id="@+id/nc_et_ssh_port"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/ssh_server"
+                    android:layout_below="@id/nc_et_ssh_server"
                     android:padding="16dp"
-                    android:hint="Puerto SSH" />
+                    android:hint="@string/nc_et_sshPort" />
 
                 <EditText
-                    android:id="@+id/ssh_user"
+                    android:id="@+id/nc_et_ssh_user"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/ssh_port"
+                    android:layout_below="@id/nc_et_ssh_port"
                     android:padding="16dp"
-                    android:hint="Usuario" />
+                    android:hint="@string/nc_et_sshUser" />
 
                 <EditText
-                    android:id="@+id/ssh_password"
+                    android:id="@+id/nc_et_ssh_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/ssh_user"
+                    android:layout_below="@id/nc_et_ssh_user"
                     android:inputType="textPassword"
                     android:padding="16dp"
-                    android:hint="Credencial" />
+                    android:hint="@string/nc_et_sshPassword" />
 
             </LinearLayout>
+    -->
         </RelativeLayout>
     </ScrollView>
-
     <Button
+        android:id="@+id/nc_btn_test_cnx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:backgroundTint="#03A9F4"
-        android:text="GUARADAR CONEXION"
-        android:fontFamily="@font/SFMonoBold"/>
+        android:text="PROBAR CONEXION"
+        android:layout_above="@id/nc_btn_save_cnx"/>
 
+    <Button
+        android:id="@+id/nc_btn_save_cnx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUARADAR CONEXION"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
 </layout>

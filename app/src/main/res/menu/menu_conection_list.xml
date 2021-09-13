@@ -9,12 +9,6 @@
         android:icon="@android:drawable/ic_menu_preferences"
         app:showAsAction="never" />
     <item
-        android:id="@+id/usetoken"
-        android:orderInCategory="1"
-        android:title="Iniciar con token"
-        android:icon="@android:drawable/ic_menu_preferences"
-        app:showAsAction="never" />
-    <item
         android:id="@+id/logout"
         android:orderInCategory="2"
         android:title="Salir"

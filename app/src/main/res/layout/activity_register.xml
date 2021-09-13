@@ -4,76 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="82dp"
-            android:layout_height="78dp"
-            android:layout_marginTop="100dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/outline_lock_24" />
+        tools:context=".RegisterActivity">
 
         <EditText
-            android:id="@+id/ma_et_pass"
+            android:id="@+id/ra_et_pass"
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="@string/ma_et_password_text"
+            android:hint="@string/ra_et_password_text"
             android:inputType="numberPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ma_et_user" />
+            app:layout_constraintTop_toBottomOf="@+id/ra_et_user" />
 
         <Button
-            android:id="@+id/ma_btn_login"
+            android:id="@+id/ra_btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/ma_btn_login_text"
+            android:text="@string/ra_btn_back_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ma_cb_rememberMe" />
+            app:layout_constraintTop_toBottomOf="@+id/ra_btn_signUp" />
 
         <EditText
-            android:id="@+id/ma_et_user"
+            android:id="@+id/ra_et_user"
             android:layout_width="250dp"
             android:layout_height="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="200dp"
             android:ems="10"
-            android:hint="@string/ma_et_user_text"
+            android:hint="@string/ra_et_user_text"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
-        <CheckBox
-            android:id="@+id/ma_cb_rememberMe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/ma_et_rememberMe_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ma_et_pass" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/ma_btn_newUser"
+            android:id="@+id/ra_btn_signUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/ma_btn_signup_text"
+            android:text="@string/ra_btn_signup_text"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ma_btn_login" />
+            app:layout_constraintTop_toBottomOf="@+id/ra_et_retypePass" />
+
+        <EditText
+            android:id="@+id/ra_et_retypePass"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/ra_et_retypePassword_text"
+            android:inputType="numberPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ra_et_pass" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

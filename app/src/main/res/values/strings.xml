@@ -1,12 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">RemDBMan</string>
-    <string name="title_activity_conection_list">ConectionList</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!--MAIN ACTIVITY-->
+    <string name="ma_et_user_text">User</string>
+    <string name="ma_et_password_text">Password</string>
+    <string name="ma_et_rememberMe_text">Remember me</string>
+    <string name="ma_btn_login_text">Log In</string>
+    <string name="ma_btn_signup_text">Sign Up</string>
+    <string name="ma_mail_required">Mail is required</string>
+    <string name="ma_mail_invalid">Inavlid mail</string>
+    <string name="ma_password_required">Password is required</string>
+    <string name="ma_password_invalid">Invalid password. Must have at least %d chars</string>
+    <!--REGISTER ACTIVITY-->
+    <string name="ra_ac_title">Register Form</string>
+    <string name="ra_et_user_text">User</string>
+    <string name="ra_et_password_text">Password</string>
+    <string name="ra_et_retypePassword_text">Retype password</string>
+    <string name="ra_btn_back_text">Back</string>
+    <string name="ra_btn_signup_text">Sign Up</string>
+    <string name="ra_mail_required">Mail is required</string>
+    <string name="ra_mail_invalid">Inavlid mail</string>
+    <string name="ra_password_required">Password is required</string>
+    <string name="ra_password_invalid">Invalid password. Must have at least %d chars</string>
+    <string name="ra_retype_password_required">Retype password</string>
+    <string name="ra_retype_password_invalid">Invalid retyped password. Must have at least %d chars</string>
+    <string name="ra_passwords_not_match">Passwords do not match</string>
+    <string name="ra_registred_user_succ">User registtred succesfully</string>
+    <!--MAIN ACTIVITY-->
+    <string name="nc_text_title">New Conection</string>
+    <string name="nc_et_cnxName">Conection Name</string>
+    <string name="nc_text_parameters">CONECTION PARAMETERS</string>
+    <string name="nc_et_host">Host, url, ip</string>
+    <string name="nc_et_port">Port</string>
+    <string name="nc_et_dbName">Database name</string>
+    <string name="nc_et_schemaName">Schema name</string>
+    <string name="nc_et_user">User</string>
+    <string name="nc_et_password">Pass</string>
+    <string name="nc_use_ssh_text">Use SSH</string>
+    <string name="nc_et_sshServer">SSH Server</string>
+    <string name="nc_et_sshPort">SSH Port</string>
+    <string name="nc_et_sshUser">SSH User</string>
+    <string name="nc_et_sshPassword">SSH Pass</string>
+    <!--NEW CONECTION KOTLIN-->
+    <string name="nck_alert_title">TEST CONNECTION</string>
+    <string name="nck_successfull_conection">SUCCESSFULL CONNECTION</string>
+    <string name="nck_fail_conection">FAIL CONNECTION, TRAY AGAIN</string>
+    <string name="nck_unknow_user">UNKNOW USER</string>
+    <string name="ncK_error_cnx_already_exists">CONNECTION ALREADY EXISTS</string>
+    <string name="nck_succesfull_cnx_saved">Connection saved successfully</string>
+    <string name="nck_field_is_required">Field is required</string>
+    <string name="nck_alert_save_connection_title">NEW_CONNECTION</string>
+    <!-- CONECTION LIST -->
+    <string name="clk_delete_alert_title">DELETE CONFIRMATION</string>
+    <string name="clk_delete_confirmation_msg">Confirm deletion of connection </string>
+    <string name="clk_alert_button_text">Delete</string>
+    <!-- ACTIVITY QUERY-->
+    <string name="aq_insert_query_label">Write query to execute</string>
+    <string name="aq_btn_delete_text">DELETE</string>
+    <string name="aq_btn_exec_text">EXECUTE</string>
+    
+    <!-- activity QUERY KOTLIN -->
+    <string name="aqk_check_query">Check query and try again </string>
+    <string name="aqk_no_results">NO result for your query</string>
 </resources>
