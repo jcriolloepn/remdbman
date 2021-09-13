@@ -155,6 +155,7 @@ class NewConection : AppCompatActivity() {
             )
             requestQueue.add(request)
     }
+    //función nueca conexión a firebase
     private fun procNewConnectionFirebase(sistemUserName:String,cnxName:String,newConnection:MysqlConfig){
         val db=Firebase.firestore
         db.collection("usersRemDBMan")
