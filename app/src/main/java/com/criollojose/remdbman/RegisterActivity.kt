@@ -56,6 +56,7 @@ class RegisterActivity : AppCompatActivity() {
             editTextEmail.requestFocus()
             return false
         }
+        //es una email correcto
         if(!isValidMail(mail)){
             editTextEmail.setError(getString(R.string.ra_mail_invalid))
             editTextEmail.requestFocus()
