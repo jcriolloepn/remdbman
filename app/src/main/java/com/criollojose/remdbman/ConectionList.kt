@@ -64,7 +64,7 @@ class ConectionList : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
-
+   
     private fun populateRecyclerView(systemUserName:String){
         val db=Firebase.firestore
         db.collection("usersRemDBMan")
