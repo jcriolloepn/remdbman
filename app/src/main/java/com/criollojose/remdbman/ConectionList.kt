@@ -24,6 +24,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 
+ 
 class ConectionList : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var conectionRecylerView:RecyclerView
