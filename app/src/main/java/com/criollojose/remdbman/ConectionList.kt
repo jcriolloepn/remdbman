@@ -68,6 +68,7 @@ class ConectionList : AppCompatActivity() {
     //funcion para poblar las conexiones existentes dentro de firebase para cada conexion
     private fun populateRecyclerView(systemUserName:String){
         val db=Firebase.firestore
+        //nuestro esquema va siempre sobre la colección de datos usersRemDBMan
         db.collection("usersRemDBMan")
                 .document(systemUserName)
                 .get()
@@ -137,7 +138,7 @@ class ConectionList : AppCompatActivity() {
         })
         dialogBuilder.create().show()
     }
-
+    //funcion de actulizacion de la conexion 
     private fun updateItemList(cnxItem:ConectionItem){
         val dialogBuilder = AlertDialog.Builder(this)
         dialogBuilder.setTitle("Confirmación de Actualizacion")
