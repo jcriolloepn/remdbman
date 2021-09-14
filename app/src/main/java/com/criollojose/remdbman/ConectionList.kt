@@ -65,6 +65,7 @@ class ConectionList : AppCompatActivity() {
         }
     }
    
+    //funcion para poblar las conexiones existentes dentro de firebase para cada conexion
     private fun populateRecyclerView(systemUserName:String){
         val db=Firebase.firestore
         db.collection("usersRemDBMan")
@@ -109,6 +110,9 @@ class ConectionList : AppCompatActivity() {
     private fun mysqlConfigToCnxItem(cnxName:String,mysqlConfig: MysqlConfig):ConectionItem{
         return ConectionItem(cnxName,cnxName,mysqlConfig.host,mysqlConfig.user)
     }
+
+
+    //funcion de editar una conexion existente
     private fun deleteItemList(systemUserName:String,cnxItem:ConectionItem){
         val dialogBuilder = AlertDialog.Builder(this)
         dialogBuilder.setTitle(getString(R.string.clk_delete_alert_title))
